@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", Arial, Helvetica,"Helvetica-Neue", sans-serif;
+    background: whitesmoke
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    padding: 20px 1px;
+}
+
+.navigation__text {
+    font-size: 18px;
+    font-weight: 22px;
+    margin-right: 10px;
+}
+
+#text {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+#btn__add {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn__add:hover {
+    background: lightskyblue;
+    transition: 1s;
+}
+
+.cards-name,
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card__name-todo {
+    background: rgb(231, 78, 78);
+}
+
+.card__name-inprog {
+    background: lightyellow;
+}
+
+.card__name-done {
+    background: lightgreen;
+}
+
+.card__done,
+.card__in-progress,
+.card__to-do {
+    max-width: 400px;
+    border: 3px solid black;
+    padding-bottom: 400px;
+}
+
+.card__name {
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cards__nav {
+    border: 3px solid black;
+    padding: 40px;
+    margin: 15px;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+}
+
+.cards__nav-task {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cards__info {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.next {
+    border: 3px solid black;
+    margin-top: 20px;
+    padding: 5px 121px;
+}
+
+.next {
+    background: white;
+    font-size: 15px;
+}
+
+.next:hover {
+    color: white;
+    background: black;
+    transition: 1s;
+}
+
